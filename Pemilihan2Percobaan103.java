@@ -10,8 +10,13 @@ public class Pemilihan2Percobaan103{
         if ((thn % 4 ) == 0){
             if ((thn%100)!=0){
                 System.out.println("Tahun Kabisat");
-            }else
-            System.out.println("Tahun "+thn+" bukan tahun kabisat");
+            }else if ((thn%400)==0){
+                System.out.println("Tahun kabisat");
+            }
+            else{
+                System.out.println("Tahun "+thn+" bukan tahun kabisat");
+            }
+            
         }else{
             System.out.println("Bukan tahun kabisat");
         }
