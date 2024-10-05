@@ -13,7 +13,7 @@ public class Pemilihan2Percobaan303 {
         System.out.print("Masukkan besarnya penghasilan : ");
         penghasilan=input03.nextInt();
 
-        if(ketagori.equalsIgnoreCase("pekerja")){
+        if(ketagori.equals("pekerja")){
             if(penghasilan<=2000000){
                 pajak=0.1;
             }else if(penghasilan<=3000000){
@@ -23,7 +23,7 @@ public class Pemilihan2Percobaan303 {
             }
             gajiBersih=(int)(penghasilan-(penghasilan*pajak));
             System.out.println("penghasilan bersih : "+gajiBersih);
-        }else if (ketagori.equalsIgnoreCase("pebisnis")){
+        }else if (ketagori.equals("pebisnis")){
             if(penghasilan<=2500000){
                 pajak=0.15;
             }else if (penghasilan<=3500000){
